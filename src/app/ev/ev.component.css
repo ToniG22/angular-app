@@ -1,0 +1,36 @@
+.override-chart-height {
+    height: 225px !important;
+}
+
+.ev-info-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-row {
+    display: flex;
+}
+
+.main-row-part-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.main-row-part-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.sub-card {
+    height: fit-content;
+    width: 60%;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+}

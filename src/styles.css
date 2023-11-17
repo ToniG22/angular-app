@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #888;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #444;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.card-body {
+  display: flex;
+  column-gap: 25px;
+  font-size: large;
+}
+
+.card-body-column {
+  display: flex;
+  flex-direction: column;
+  column-gap: 25px;
+  font-size: large;
+}
+
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #4fbaaf;
+  padding: 15px;
+  border-radius: 25px;
+  row-gap: 25px;
+  width: 160px;
+  height: 160px;
+}
+
+.sub-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 2px;
+
+}
+
+.ngx-charts-outer {
+  -webkit-animation:chartFadeIn linear 0 !important;
+  animation:chartFadeIn linear 0 !important;
+}
