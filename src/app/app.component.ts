@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { HomeModule } from './home/home.module';
 import { EvModule } from './ev/ev.module';
 import { BessModule } from './bess/bess.module';
@@ -14,4 +14,10 @@ import { PvModule } from './pv/pv.module';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private router: Router) {}
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
 }

@@ -2,7 +2,7 @@
     height: 225px !important;
 }
 
-.ev-info-row {
+.line-chart-info {
     display: flex;
     flex-direction: column;
 }

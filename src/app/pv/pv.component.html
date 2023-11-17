@@ -1,2 +1,33 @@
-<p>pv works!</p>
-<app-linechart></app-linechart>
+<div class="card">
+    <div class="card-body-column">
+        <div>
+            <h2>PV Overview</h2>
+            <div class="main-row">
+                <div class="main-row-part-1">
+                    <img src="../../assets/Sun energy-rafiki.svg">
+                </div>
+                <div class="main-row-part-2">
+                    <div class="sub-card">
+                        <div class="sub-card-title">
+                            <h3>PV</h3>
+                            <fa-icon [icon]="faSolarPanel"></fa-icon>
+                        </div>
+                        <div class="sub-card-content">
+                            <div class="info-row"><p>Power Produced:</p><p> +/- kW</p></div>
+                            <div class="info-row"><p>Energy Produced (Today):</p><p> -- kWh</p></div>
+                            <div class="info-row"><p>Energy Produced (Monthly):</p><p> --</p></div>
+                            <div class="info-row"><p>Energy Produced (Yearly):</p><p> -- A</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                Graph
+            </div>
+        </div>
+        <div class="line-chart-info">
+            <h2>Performance and Historical Data</h2>
+            <app-linechart-v2></app-linechart-v2>
+        </div>
+    </div>
+</div>
