@@ -34,3 +34,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.pie-chart-center {
+    display: flex;
+    justify-content: center;
+}

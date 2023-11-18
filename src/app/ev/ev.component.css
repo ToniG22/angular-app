@@ -1,36 +1,62 @@
 .override-chart-height {
-    height: 225px !important;
+  height: 225px !important;
 }
 
 .line-chart-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-row {
-    display: flex;
+  display: flex;
 }
 
 .main-row-part-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 .main-row-part-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 
 .sub-card {
-    height: fit-content;
-    width: 60%;
+  height: fit-content;
+  width: 60%;
 }
 
 .info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pie-chart-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .main-row {
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+  }
+
+  .main-row-part-1 {
+    display: none;
+  }
+  
+  .main-row-part-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+
 }

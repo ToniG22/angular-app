@@ -1,5 +1,9 @@
-<div style="display: block;">
-  <canvas baseChart width="800" height="300" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
+<div>
+  <canvas baseChart width="800" height="300" [type]="lineChartType" [data]="lineChartData" [options]="lineChartOptions"
     [legend]="lineChartLegend">
   </canvas>
+  <button (click)="onRangeChange('day')">Day</button>
+  <button (click)="onRangeChange('week')">Week</button>
+  <button (click)="onRangeChange('month')">Month</button>
+  <button (click)="onRangeChange('year')">Year</button>
 </div>
