@@ -57,6 +57,17 @@
     align-items: center;
     width: 100%;
   }
+
+  .sub-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #4fbaaf;
+    padding: 15px;
+    border-radius: 25px;
+    row-gap: 25px;
+    width: fit-content;
+    height: fit-content;
+  }
   
 
 }

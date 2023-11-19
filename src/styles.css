@@ -21,6 +21,7 @@ a {
   padding: 20px;
   background-color: #444;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  width: fit-content;
 }
 
 .card-body {
@@ -62,6 +63,13 @@ a {
   .card-body {
     flex-direction: column;
     row-gap: 25px;
+  }
+  .responsive-override-piechart {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .responsive-override-linechart {
+    width: 300px !important;
   }
 }
 

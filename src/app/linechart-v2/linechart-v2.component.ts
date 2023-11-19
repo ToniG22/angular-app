@@ -120,9 +120,11 @@ export class LinechartV2Component {
         break;
       case 'year':
         this.updateChartTimeUnit('month');
-        endIndex = 24 * 7 * 30;
+        endIndex = this.originalLabels.length;
         break;
     }
+
+    //console.log(endIndex)
 
     this.lineChartData = {
       labels: this.originalLabels.slice(-endIndex),
