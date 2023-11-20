@@ -9,4 +9,6 @@ import { faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 })
 export class PvComponent {
   faSolarPanel = faSolarPanel;
+
+  lineChartDataProp = { data: 'pv-linechart-data' };
 }

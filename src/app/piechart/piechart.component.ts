@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
 
 @Component({
@@ -7,6 +7,8 @@ import { ChartConfiguration, ChartOptions } from 'chart.js';
   styleUrl: './piechart.component.css',
 })
 export class PiechartComponent {
+  @Input() pieChartDataProp: any;
+
   public pieChartOptions: ChartOptions<'pie'> = {
     responsive: true,
     color: 'white',
@@ -20,6 +22,10 @@ export class PiechartComponent {
   ];
   public pieChartLegend = true;
   public pieChartPlugins = [];
+
+  ngOnInit() {
+    console.log(this.pieChartDataProp)
+  }
 
   constructor() {}
 }

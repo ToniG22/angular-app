@@ -59,7 +59,7 @@ a {
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .card-body {
     flex-direction: column;
     row-gap: 25px;
@@ -69,7 +69,8 @@ a {
     height: 150px !important;
   }
   .responsive-override-linechart {
-    width: 300px !important;
+    width: 400px !important;
+    height: 300px !important;
   }
 }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ChartConfiguration, ChartOptions, ChartType } from 'chart.js';
 import 'chartjs-adapter-moment';
 
@@ -8,6 +8,8 @@ import 'chartjs-adapter-moment';
   styleUrls: ['./linechart-v2.component.css'],
 })
 export class LinechartV2Component {
+  @Input() lineChartDataProp: any;
+
   //Used to change between day, week, month
   public lineChartData: ChartConfiguration['data'];
 
@@ -17,23 +19,23 @@ export class LinechartV2Component {
   private originalDataset = [
     {
       label: 'PV',
-      data: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
+      data: [2, 4, 6, 8, 110, 12, 14, 116, 18, 20],
     },
     {
       label: 'GRID',
-      data: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30],
+      data: [3, 6, 9, 12, 15, 18, 241, 24, 27, 30],
     },
     {
       label: 'GRID Import',
-      data: [4, 8, 12, 16, 20, 24, 28, 32, 36, 40],
+      data: [4, 8, 12, 16, 20, 24, 220, 32, 36, 250],
     },
     {
       label: 'GRID Export',
-      data: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+      data: [5, 10, 15, 20, 25, 30, 123, 40, 45, 400],
     },
     {
       label: 'SOC',
-      data: [6, 12, 18, 24, 30, 36, 42, 48, 54, 60],
+      data: [6, 12, 18, 24, 30, 36, 42, 48, 54, 120],
     },
   ];
   //Full 30 day range
@@ -100,7 +102,9 @@ export class LinechartV2Component {
     this.initChartData('day');
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.lineChartDataProp)
+  }
 
   initChartData(range: 'day' | 'week' | 'month' | 'year') {
     let endIndex: number;

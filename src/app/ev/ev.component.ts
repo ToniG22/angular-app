@@ -9,4 +9,7 @@ import { faCar } from '@fortawesome/free-solid-svg-icons';
 })
 export class EvComponent {
   faCar = faCar;
+
+  pieChartDataProp = { data: 'ev-piechart-data' };
+  lineChartDataProp = { data: 'ev-linechart-data' };
 }

@@ -9,4 +9,7 @@ import { faBattery } from '@fortawesome/free-solid-svg-icons';
 })
 export class BessComponent {
   faBattery = faBattery;
+
+  pieChartDataProp = { data: 'bess-piechart-data' };
+  lineChartDataProp = { data: 'bess-linechart-data' };
 }

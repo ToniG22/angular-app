@@ -25,12 +25,12 @@
             </div>
             <h2>Energy Overview</h2>
             <div class="pie-chart-center">
-                <app-piechart></app-piechart>
+                <app-piechart [pieChartDataProp]="pieChartDataProp"></app-piechart>
             </div>
         </div>
         <div class="line-chart-info">
             <h2>Performance and Historical Data</h2>
-            <app-linechart-v2></app-linechart-v2>
+            <app-linechart-v2 [lineChartDataProp]="lineChartDataProp"></app-linechart-v2>
         </div>
     </div>
 </div>

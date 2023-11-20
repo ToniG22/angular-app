@@ -6,8 +6,8 @@
                 <fa-icon [icon]="faCar"></fa-icon>
             </div>
             <div class="sub-card-content">
-                <p>22 kW</p>
-                <p>SOC 25%</p>
+                <p>{{data_ev?.power}} kW</p>
+                <p>SOC {{(data_ev?.soc).toFixed(4) * 100}} %</p>
             </div>
         </div>
         <div class="sub-card">
@@ -26,7 +26,7 @@
                 <fa-icon [icon]="faSolarPanel"></fa-icon>
             </div>
             <div class="sub-card-content">
-                <p>11 kW</p>
+                <p>{{data_pv?.value}} kW</p>
             </div>
         </div>
         <div class="sub-card">
@@ -44,7 +44,7 @@
                 <fa-icon [icon]="faHouseChimney"></fa-icon>
             </div>
             <div class="sub-card-content">
-                <p>102 kW</p>
+                <p>{{(data_loads?.value).toFixed(2)}} kW</p>
             </div>
         </div>
     </div>

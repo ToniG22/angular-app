@@ -25,7 +25,6 @@ export class HomeComponent {
   data_grid: any;
   data_loads: any;
 
-
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
@@ -33,21 +32,21 @@ export class HomeComponent {
   }
 
   verifyData(): void {
-    console.log(this.data_ev)
+    /* console.log(this.data_ev)
     console.log(this.data_bess)
     console.log(this.data_pv)
     console.log(this.data_grid)
-    console.log(this.data_loads)
+    console.log(this.data_loads) */
   }
 
   async loadData() {
     try {
-      this.data_ev = this.dataService.getLatestSchedulingByCharger('charger_1');
-      this.data_bess = this.dataService.getLatestMeasurementByDevice('wallbox');
-      this.data_pv = this.dataService.getLatestMeasurementByDevice('meter_pv');
-      this.data_grid = this.dataService.getLatestMeasurementByDevice('meter_house');
-      this.data_loads = this.dataService.getLatestMeasurementByDevice('meter_house');
-      // Update your charts or UI components with this.data
+      //Uncomment this when Django is running
+      /* this.data_ev = (await this.dataService.getLatestSchedulingByCharger('charger_1')).data;
+      this.data_bess = (await this.dataService.getLatestMeasurementByDevice('wallbox')).data;
+      this.data_pv = (await this.dataService.getLatestMeasurementByDevice('meter_pv')).data;
+      this.data_grid = (await this.dataService.getLatestMeasurementByDevice('meter_house')).data;
+      this.data_loads = (await this.dataService.getLatestMeasurementByDevice('meter_house')).data; */
     } catch (error) {
       // Handle error, e.g., display an error message to the user
       console.error('Error loading data:', error);

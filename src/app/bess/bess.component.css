@@ -40,7 +40,7 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main-row {
     flex-direction: column;
     row-gap: 25px;
